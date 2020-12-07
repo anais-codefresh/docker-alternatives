@@ -10,8 +10,6 @@ spec:
            "--context=.",
            "--destination=anaisurlichs/demo:1.0.0"] # replace with your dockerhub account
    volumeMounts:
-     - name: kaniko-secret
-       mountPath: /kaniko/.docker
      - name: dockerfile-storage
        mountPath: /workspace
  restartPolicy: Never
