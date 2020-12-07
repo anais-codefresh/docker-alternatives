@@ -9,11 +9,4 @@ spec:
    args: ["--dockerfile=Dockerfile",
            "--context=.",
            "--destination=anaisurlichs/demo:1.0.0"] # replace with your dockerhub account
-   volumeMounts:
-     - name: dockerfile-storage
-       mountPath: /workspace
  restartPolicy: Never
- volumes:
-   - name: dockerfile-storage
-     persistentVolumeClaim:
-       claimName: dockerfile-claim
