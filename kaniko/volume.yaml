@@ -11,4 +11,4 @@ spec:
    - ReadWriteOnce
  storageClassName: local-storage
  hostPath:
-   path: /home/anaisurlichs/Documents/work/cf/docker-alternatives/kaniko # replace with local directory, such as "/home/<user-name>/kaniko"
+   path: /codefresh/volume/docker-alternatives/kaniko # replace with local directory, such as "/home/<user-name>/kaniko"
