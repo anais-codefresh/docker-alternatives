@@ -16,12 +16,6 @@ spec:
        mountPath: /workspace
  restartPolicy: Never
  volumes:
-   - name: kaniko-secret
-     secret:
-       secretName: regcred
-       items:
-         - key: .dockerconfigjson
-           path: config.json
    - name: dockerfile-storage
      persistentVolumeClaim:
        claimName: dockerfile-claim
