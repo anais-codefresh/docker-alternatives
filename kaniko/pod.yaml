@@ -7,8 +7,8 @@ spec:
  - name: kaniko
    image: gcr.io/kaniko-project/executor:latest
    args: ["--dockerfile=Dockerfile",
-           "--context=dir://workspace",
-           "--destination=anaisurlichs/demo"] # replace with your dockerhub account
+           "--context=.",
+           "--destination=anaisurlichs/demo:1.0.0"] # replace with your dockerhub account
    volumeMounts:
      - name: kaniko-secret
        mountPath: /kaniko/.docker
