@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
- name: dockerfile
- labels:
-   type: local
+  name: dockerfile
+  labels:
+    type: local
 spec:
- capacity:
-   storage: 10Gi
- accessModes:
-   - ReadWriteOnce
- storageClassName: local-storage
- hostPath:
-   path: /codefresh/volume/docker-alternatives # replace with local directory, such as "/home/<user-name>/kaniko"
+  capacity:
+    storage: 10Gi
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: local-storage
+  hostPath:
+    path: <local-directory>  # replace with local directory, such as "/home/<user-name>/kaniko"
